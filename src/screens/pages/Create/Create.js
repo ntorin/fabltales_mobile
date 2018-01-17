@@ -11,7 +11,7 @@ class Create extends React.Component {
     render(){
         return(
             <View style={BaseStyles.container}>
-
+              <Text>test</Text>
             </View>
         )
     }

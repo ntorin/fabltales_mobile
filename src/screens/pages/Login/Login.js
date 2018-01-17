@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Image } from 'react-native';
 import { BaseStyles, goToHome } from 'helpers/constants.js';
 import Button from 'components/Button';
 
@@ -18,15 +18,48 @@ class Login extends React.Component {
     render(){
         return(
             <View style={BaseStyles.container}>
-              <Button onPress={this.loginUser}>
-              ooboi
-              </Button>
+              <Image style={styles.logo} source={require('assets/fabltales.png')}/>
+              <View style={{flex:3}}>
+                <View>
+                  <Text style={styles.text}>Username</Text>
+                  <TextInput style={styles.text} underlineColorAndroid={'#FFFFFF'}/>
+                </View>
+                <View>
+                  <Text style={styles.text}>Password</Text>
+                  <TextInput style={styles.text} underlineColorAndroid={'#FFFFFF'}/>
+                </View>
+              </View>
+              <View style={{flexDirection:'row', flex:5}}>
+                <View style={{flexDirection:'row'}}>
+                  <Button style={styles.button}>
+                    Register
+                  </Button>
+                  <Button style={styles.button} onPress={this.loginUser}>
+                      Login
+                  </Button>
+                </View>
+              </View>
             </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
+    logo:{
+        flex: 1,
+        resizeMode: 'contain',
+        height: undefined,
+        width: undefined,
+        alignContent:'flex-start',
+    },
+    text:{
+      color: '#FFFFFF',
+    },
+    button:{
+      flex:1,
+      textAlignVertical: 'center',
+      alignContent:'flex-start',
+    },
 
 });
 

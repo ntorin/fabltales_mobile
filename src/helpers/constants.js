@@ -4,7 +4,8 @@ import { Navigation } from 'react-native-navigation';
 export const BaseStyles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 15
+    padding: 15,
+    backgroundColor: '#131862'
   },
 
   absolute: {
@@ -15,11 +16,12 @@ export const BaseStyles = StyleSheet.create({
 
 
 export const PrimaryColor = '#FFFFFF';
+export const ScreenBackgroundColor = '#00080';
 
 export const goToHome = () =>{
-  Navigation.startSingleScreenApp({
+  Navigation.startSingleScreenApp({ // <<
     screen: {
-      screen: 'fabltales_mobile.MainMenu',
+      screen: 'fabltales_mobile.MainMenu', // <<
       navigatorStyle: {
           navBarHidden: true,
           navBarTransparent: true,

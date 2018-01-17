@@ -19,12 +19,12 @@ class MainMenu extends React.Component {
         return(
             <View style={BaseStyles.container}>
                 <Text>boo</Text>
-                <Button onPress={this.push('fabltales_mobile.Create')}>Create</Button>
-                <Button onPress={this.push('fabltales_mobile.Library')}>Library</Button>
-                <Button onPress={this.push('fabltales_mobile.Shop')}>Shop</Button>
-                <Button onPress={this.push('fabltales_mobile.Friends')}>Friends</Button>
-                <Button onPress={this.push('fabltales_mobile.Profile')}>Profile</Button>
-                <Button onPress={this.push('fabltales_mobile.Settings')}>Settings</Button>
+                <Button onPress={() => this.push('fabltales_mobile.Create')}>Create</Button>
+                <Button onPress={() => this.push('fabltales_mobile.Library')}>Library</Button>
+                <Button onPress={() => this.push('fabltales_mobile.Shop')}>Shop</Button>
+                <Button onPress={() => this.push('fabltales_mobile.Friends')}>Friends</Button>
+                <Button onPress={() => this.push('fabltales_mobile.Profile')}>Profile</Button>
+                <Button onPress={() => this.push('fabltales_mobile.Settings')}>Settings</Button>
             </View>
         )
     }
