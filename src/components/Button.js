@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import {BaseStyles, PrimaryColor} from 'helpers/constants.js';
-import APSLButton from 'apsl-react-native-button'
+import RNButton from 'react-native-button'
 
 class Button extends React.Component {
 
@@ -11,14 +11,14 @@ class Button extends React.Component {
 
     render(){
         return(
-            <APSLButton
+            <RNButton
             onPress={this.props.onPress}
             textStyle={styles.textStyle}
             isLoading={this.props.isLoading}
             isDisabled={this.props.isDisabled}
             style={[styles.style, this.props.style]}>
             {this.props.children}
-            </APSLButton>
+            </RNButton>
         )
     }
 }

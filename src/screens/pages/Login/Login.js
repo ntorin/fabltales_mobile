@@ -30,14 +30,16 @@ class Login extends React.Component {
                 </View>
               </View>
               <View style={{flexDirection:'row', flex:5}}>
-                <View style={{flexDirection:'row'}}>
+                <View style={{flex: 1}}>
                   <Button style={styles.button}>
                     Register
                   </Button>
+                  </View>
+                  <View style={{flex: 1}}>
                   <Button style={styles.button} onPress={this.loginUser}>
                       Login
                   </Button>
-                </View>
+                  </View>
               </View>
             </View>
         )
@@ -56,7 +58,7 @@ const styles = StyleSheet.create({
       color: '#FFFFFF',
     },
     button:{
-      flex:1,
+      flex: 1,
       textAlignVertical: 'center',
       alignContent:'flex-start',
     },
