@@ -12,12 +12,12 @@ class Button extends React.Component {
     render(){
         return(
             <RNButton
-            onPress={this.props.onPress}
-            textStyle={styles.textStyle}
-            isLoading={this.props.isLoading}
-            isDisabled={this.props.isDisabled}
-            style={[styles.style, this.props.style]}>
-            {this.props.children}
+              onPress={this.props.onPress}
+              textStyle={styles.textStyle}
+              isLoading={this.props.isLoading}
+              isDisabled={this.props.isDisabled}
+              style={[styles.style, this.props.style]}>
+              {this.props.children}
             </RNButton>
         )
     }

@@ -32,8 +32,9 @@ export const goToHome = () =>{
   });
 }
 
-export const pushScreen = (navigator, screen, passProps) =>{
+export const pushScreen = (navigator, screen, title, passProps) =>{
   navigator.push({
+    title: title,
     screen: screen,
     passProps: passProps,
   });
