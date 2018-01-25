@@ -13,6 +13,7 @@ import Friends from 'pages/Friends/Friends';
 import Profile from 'pages/Profile/Profile';
 import Settings from 'pages/Settings/Settings';
 import CurrentStory from 'pages/CurrentStory/CurrentStory';
+import LobbyChat from 'pages/LobbyChat/LobbyChat';
 
 
 export default function(){
@@ -29,4 +30,5 @@ export default function(){
     Navigation.registerComponent('fabltales_mobile.Profile', () => Profile);
     Navigation.registerComponent('fabltales_mobile.Settings', () => Settings);
     Navigation.registerComponent('fabltales_mobile.CurrentStory', () => CurrentStory);
+    Navigation.registerComponent('fabltales_mobile.LobbyChat', () => LobbyChat);
 }

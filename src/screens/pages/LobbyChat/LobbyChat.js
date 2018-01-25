@@ -1,25 +1,19 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image } from 'react-native';
+import { StyleSheet, View, Text, Image, TextInput } from 'react-native';
 import { BaseStyles } from 'helpers/constants.js';
 import Button from 'components/Button';
 import PopulatableListView from 'components/PopulatableListView';
 
-class Lobby extends React.Component {
+class LobbyChat extends React.Component {
 
     constructor(props){
         super(props);
     }
 
-    static navigatorButtons = {
-            rightButtons: [{
-                title: 'Start',
-                id: 'actions',
-            }]
-        };
-
     render(){
         return(
             <View style={BaseStyles.container}>
+              <TextInput underlineColorAndroid= '#FFFFFF' style={styles.chatbar}></TextInput>
               <PopulatableListView></PopulatableListView>
             </View>
         )
@@ -27,11 +21,9 @@ class Lobby extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  button:{
-    margin: 10,
-    textAlignVertical: 'center',
-    borderRadius: 5,
-    backgroundColor: '#FFFFFF'
+  chatbar:{
+      color: '#FFFFFF',
+      textAlign: 'center'
   },
 });
 
@@ -39,4 +31,4 @@ const layout = StyleSheet.create({
 
 });
 
-export default Lobby;
+export default LobbyChat;
