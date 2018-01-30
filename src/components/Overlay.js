@@ -18,7 +18,7 @@ class Overlay extends React.Component {
 
     render(){
         return(
-            <View style={{flex:1}}>
+              <View style={{flex:1}}>
               <View/>
               <View style={{flex:1, justifyContent:'flex-end'}}>
                 <View style={{flexDirection:'row', justifyContent:'space-between'}}>

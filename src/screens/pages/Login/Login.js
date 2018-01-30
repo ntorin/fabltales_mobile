@@ -109,7 +109,7 @@ class Login extends React.Component {
                     <View style={{ flex: 1 }}>
                         <Button style={styles.button} onPress={this.loginUser}>
                             Login
-                    </Button>
+                        </Button>
                     </View>
                 </View>
             </View>
