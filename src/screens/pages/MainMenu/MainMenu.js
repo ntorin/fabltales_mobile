@@ -34,6 +34,7 @@ class MainMenu extends React.Component {
                       <Button style={styles.button} onPress={() => this.push('fabltales_mobile.Shop', 'Shop')}>Shop</Button>
                       <Button style={styles.button} onPress={() => this.push('fabltales_mobile.Lobby', 'Meme Lobby')}>Lobby Test</Button>
                       <Button style={styles.button} onPress={() => this.push('fabltales_mobile.CurrentStory', 'Woah')}>Story Test</Button>
+                      <Button style={styles.button} onPress={() => this.push('fabltales_mobile.Comments', 'wah')}>Comments Test</Button>
                       <Button style={styles.button} onPress={() => this.toggleChat()}>TOGGLE CHAT</Button>
                     </View>
                     <View style={{flex:1}}></View>

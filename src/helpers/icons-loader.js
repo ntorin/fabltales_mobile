@@ -7,6 +7,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import Foundation from 'react-native-vector-icons/Foundation';
 import Octicons from 'react-native-vector-icons/Octicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
 // define your suffixes by yourself..
@@ -22,7 +23,7 @@ const icons = {
   "compass": [30, "#fff", Entypo],
   "menu": [30, "#fff", Entypo],
   "group": [30, "#fff", FontAwesome],
-  "gear": [30, "#000", FontAwesome]
+  "gear": [30, "#000", FontAwesome],
 }
 
 const defaultIconProvider = Entypo;
